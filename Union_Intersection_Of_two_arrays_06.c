@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 void print_union(int[], int[], int, int);
+void print_intersection(int[], int[], int, int);
 
 void main()
 {
