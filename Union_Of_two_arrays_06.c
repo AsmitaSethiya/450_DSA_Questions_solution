@@ -19,16 +19,16 @@ void print_union(int arr1[], int arr2[], int m, int n)
     int i = 0, j = 0;
     while(i < m && j < n)
     {
-        while((i < m) && (arr1[i] == arr1[i + 1]))
+        while((i < m) && (arr1[i] == arr1[i + 1]))          // Handling duplicate in arr1
         {
             i++;
         }
-        while((j < n) && (arr2[j] == arr2[j + 1]))
+        while((j < n) && (arr2[j] == arr2[j + 1]))          // Handling duplicate in arr2
         {
             j++;
         }
         
-        if(arr1[i] < arr2[j])
+        if(arr1[i] < arr2[j])           // for union operation
         {
             printf("%d\t", arr1[i]);
             i++;
@@ -47,7 +47,7 @@ void print_union(int arr1[], int arr2[], int m, int n)
         
     }
      
-    while(i < m)
+    while(i < m)        // printf remaining elements
     {
         printf("%d\t", arr1[i]);
         i++;
